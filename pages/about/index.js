@@ -23,18 +23,18 @@ const aboutData = [
       {
         title: "Web Development",
         icons: [
-          <FaHtml5 />,
-          <FaCss3 />,
-          <FaJs />,
-          <FaReact />,
-          <SiNextdotjs />,
-          <SiFramer />,
-          <FaWordpress />,
+          <FaHtml5 key="html5" />,
+          <FaCss3 key="css3" />,
+          <FaJs key="js" />,
+          <FaReact key="react" />,
+          <SiNextdotjs key="nextjs" />,
+          <SiFramer key="framer" />,
+          <FaWordpress key="wordpress" />,
         ],
       },
       {
         title: "UI/UX Design",
-        icons: [<FaFigma />, <SiAdobexd />, <SiAdobephotoshop />],
+        icons: [<FaFigma key="figma" />, <SiAdobexd key="adobexd" />, <SiAdobephotoshop key="photoshop" />],
       },
     ],
   },
@@ -79,10 +79,6 @@ const aboutData = [
         title: "Computer Science Diploma - AV Technical Institute",
         stage: "2009",
       },
-      // {
-      //   title: "Certified Graphic Designer - ABC Institute, Los Angeles, CA",
-      //   stage: "2006",
-      // },
     ],
   },
 ];
@@ -229,9 +225,9 @@ const About = () => {
                   <div>{item.stage}</div>
                   <div className="flex gap-x-4">
                     {/* icons */}
-                    {item.icons?.map((icon, itemIndex) => {
+                    {item.icons?.map((icon, iconIndex) => {
                       return (
-                        <div className="text-2xl" key={itemIndex}>
+                        <div className="text-2xl" key={iconIndex}>
                           {icon}
                         </div>
                       );
