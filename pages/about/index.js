@@ -34,7 +34,11 @@ const aboutData = [
       },
       {
         title: "UI/UX Design",
-        icons: [<FaFigma key="figma" />, <SiAdobexd key="adobexd" />, <SiAdobephotoshop key="photoshop" />],
+        icons: [
+          <FaFigma key="figma" />,
+          <SiAdobexd key="adobexd" />,
+          <SiAdobephotoshop key="photoshop" />,
+        ],
       },
     ],
   },
@@ -126,8 +130,8 @@ const About = () => {
             exit="hidden"
             className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0"
           >
-            10 years ago, I began freelancing as a developer. Since then, I've
-            done remote work for companies in the US, Canada, and Europe. I've
+            10 years ago, I began freelancing as a developer. Since then, I&apos;ve
+            done remote work for companies in the US, Canada, and Europe. I&apos;ve
             worked on projects for management and HRMS like products also.
           </motion.p>
           {/* counters */}
